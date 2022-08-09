@@ -3,11 +3,20 @@ import Card from "../UI/Card";
 import classes from "./AddUser.module.css";
 import Button from "../UI/Button";
 
+
 const AddUser = (props) => {
   const [enteredUsername, setEnteredUsername] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
   const addUserHandler = (event) => {
     event.preventDefault();
+
+
+    if(enteredUsername.trim().length===0 || enteredAge.trim().length===0){
+       return;
+    }
+    if(+enteredUsername.trim() <=1 || enteredAge.trim() <=1){
+        return;
+     }
 
     console.log(enteredUsername, enteredAge);
 
@@ -28,8 +37,6 @@ const AddUser = (props) => {
       onClick={addUserHandler}
       cssClass={classes.input}
     >
-      {/* <input className={classes.input}></input> */}
-      {enteredUsername}
       <form onSubmit={addUserHandler}>
         <label htmlFor="username">User Name</label>
         <input
@@ -49,6 +56,8 @@ const AddUser = (props) => {
 
         <Button type="submit"> Add User</Button>
       </form>
+
+   
     </Card>
   );
 };
