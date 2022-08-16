@@ -1,10 +1,12 @@
 import { Fragment } from "react";
 import classes from "./Header.module.css";
+import HeaderCarrtButton   from "./HeaderCarrtButton";
 const Header = (props) => {
   return (
     <Fragment>
       <header className={classes.header}>
         <h1>zylus Meals</h1>
+        <HeaderCarrtButton/>
       </header>
 
       <div className={['main-image']}>
