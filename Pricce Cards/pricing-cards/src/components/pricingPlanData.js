@@ -39,7 +39,7 @@
     price: 48,
     Currency: "USD",
     frequency: "/month ",
-    description: "Dedicated support and infrastructure for your company",
+    description: "Dedicated supporthing is not possible is hat yes",
     features: [
       "Unlimited products ",
       "Unlimited subscribers",
