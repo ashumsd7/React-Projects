@@ -10,10 +10,10 @@ const Header = (props) => {
       </header>
 
       <div className={['main-image']}>
-        <img
+        {/* <img
           alt="food image"
           src="https://burst.shopifycdn.com/photos/flatlay-iron-skillet-with-meat-and-other-food.jpg?width=1200&format=pjpg&exif=1&iptc=1"
-        ></img>
+        ></img> */}
       </div>
     </Fragment>
   );
