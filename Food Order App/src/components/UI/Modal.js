@@ -20,8 +20,6 @@ const Modal = (props) => {
     console.log(portalElement)
   return (
     <Fragment>
-      {/* <Backdrop></Backdrop>
-      <ModalOverlays>{props.children}</ModalOverlays> */}
       {ReactDOM.createPortal(<Backdrop/>,portalElement)}
       {ReactDOM.createPortal(  <ModalOverlays>{props.children}</ModalOverlays>,portalElement)}
      
